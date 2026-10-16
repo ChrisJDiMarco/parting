@@ -1,0 +1,400 @@
+{
+  "startedAt": "2026-09-06T03:17:40.445Z",
+  "status": "passed",
+  "checks": [
+    "Separate native Electron instance renders WebGL2 rink and eight pucks",
+    "Rules modal opens and Let’s play returns to table",
+    "Top camera remains freely orbitable and mouse wheel zooms",
+    "Top and 3D camera presets respond",
+    "Canvas picking and Clear pair cancel without spending turn",
+    "Mouse slider drag and release fires exactly once, settles and passes turn",
+    "Cancel new-match confirmation preserves active game",
+    "All primary controls fit native minimum size 1000×740",
+    "Complete game via real mouse input scores, removes pucks and opens result dialog",
+    "Rematch clears scores, restores eight pucks and swaps starter",
+    "No renderer exceptions or console errors"
+  ],
+  "shots": [
+    {
+      "turn": 2,
+      "player": 1,
+      "pair": [
+        0,
+        4
+      ],
+      "force": 100,
+      "scores": [
+        0,
+        1
+      ],
+      "pucks": 7
+    },
+    {
+      "turn": 3,
+      "player": 0,
+      "pair": [
+        0,
+        1
+      ],
+      "force": 100,
+      "scores": [
+        1,
+        1
+      ],
+      "pucks": 6
+    },
+    {
+      "turn": 4,
+      "player": 1,
+      "pair": [
+        1,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        1,
+        2
+      ],
+      "pucks": 5
+    },
+    {
+      "turn": 5,
+      "player": 0,
+      "pair": [
+        6,
+        7
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        2
+      ],
+      "pucks": 4
+    },
+    {
+      "turn": 6,
+      "player": 1,
+      "pair": [
+        3,
+        6
+      ],
+      "force": 75,
+      "scores": [
+        2,
+        3
+      ],
+      "pucks": 3
+    },
+    {
+      "turn": 7,
+      "player": 0,
+      "pair": [
+        2,
+        3
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        3
+      ],
+      "pucks": 3
+    },
+    {
+      "turn": 8,
+      "player": 1,
+      "pair": [
+        2,
+        3
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 9,
+      "player": 0,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 10,
+      "player": 1,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 11,
+      "player": 0,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 12,
+      "player": 1,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 13,
+      "player": 0,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 14,
+      "player": 1,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 15,
+      "player": 0,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 16,
+      "player": 1,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 17,
+      "player": 0,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 18,
+      "player": 1,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 19,
+      "player": 0,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 20,
+      "player": 1,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 21,
+      "player": 0,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 22,
+      "player": 1,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 50,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 23,
+      "player": 0,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    },
+    {
+      "turn": 24,
+      "player": 1,
+      "pair": [
+        3,
+        5
+      ],
+      "force": 100,
+      "scores": [
+        2,
+        4
+      ],
+      "pucks": 2
+    }
+  ],
+  "errors": [],
+  "console": [
+    {
+      "type": "warning",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead."
+    }
+  ],
+  "diagnostics": {
+    "webgl": true,
+    "renderer": {
+      "frame": 94,
+      "calls": 1,
+      "triangles": 1,
+      "points": 0,
+      "lines": 0
+    },
+    "camera": [
+      0,
+      750,
+      849.9999999999999
+    ],
+    "version": "1.0.0"
+  },
+  "finalGame": {
+    "pucks": [
+      {
+        "id": 3,
+        "x": 234.0065072081152,
+        "y": -127.03677269879844,
+        "vx": 0,
+        "vy": 0
+      },
+      {
+        "id": 5,
+        "x": 65.1119532517774,
+        "y": 224.3897217268211,
+        "vx": 0,
+        "vy": 0
+      }
+    ],
+    "scores": [
+      2,
+      4
+    ],
+    "currentPlayer": 1,
+    "starter": 0,
+    "turns": 24,
+    "phase": "over",
+    "events": [
+      {
+        "type": "settled",
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "selected": [],
+    "force": 100
+  },
+  "completedAt": "2026-09-06T03:18:56.909Z"
+}

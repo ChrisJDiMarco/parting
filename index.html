@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Parting</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header class="titlebar">
+    <div class="brand">PARTING<span>A GAME OF SHARED CONSEQUENCES</span></div>
+    <nav aria-label="Game settings">
+      <button id="sound" class="quiet" aria-pressed="true">Sound on</button>
+      <button id="help" class="quiet">How to play <span class="key">?</span></button>
+      <button id="new-match" class="quiet">New match <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="scoreboard" aria-label="Scoreboard">
+      <section class="player amber active" id="player-0"><div class="player-name"><i></i> AMBER <small>LEFT GOAL</small></div><strong id="score-0">0</strong><div class="collected" id="collected-0"></div></section>
+      <div class="match-info"><span id="turn-number">TURN 01 / 24</span><div class="turn-mark"><span></span><b id="turn-player">Amber to play</b><span></span></div><small>LOCAL TWO-PLAYER</small></div>
+      <section class="player blue" id="player-1"><div class="player-name"><i></i> BLUE <small>RIGHT GOAL</small></div><strong id="score-1">0</strong><div class="collected" id="collected-1"></div></section>
+    </div>
+
+    <div id="stage" aria-label="Three-dimensional Parting rink. Click two pucks to select them. Drag empty space to orbit and scroll to zoom."><canvas id="scene"></canvas><div id="puck-labels" aria-hidden="true"></div></div>
+    <div class="scene-caption"><span class="live-dot"></span><span id="remaining">8 SHARED PUCKS</span><span class="caption-line"></span><span>EQUAL FORCE. DIFFERENT CONSEQUENCES.</span></div>
+    <div class="view-tools" aria-label="Camera controls"><button id="view-studio" class="selected" aria-pressed="true">3D view</button><button id="view-top" aria-pressed="false">Top view</button><button id="view-reset" title="Reset camera">↺</button></div>
+    <div class="camera-hint">Drag the table to orbit <span>·</span> Scroll to zoom</div>
+
+    <footer class="controls">
+      <div class="instruction"><div class="eyebrow" id="step-label">01 / CHOOSE A PAIR</div><h1 id="instruction">Every puck needs a partner.</h1><p id="instruction-detail">Click any two pucks. Their positions aim your shot.</p></div>
+      <div class="shot-control">
+        <div class="power-heading"><span id="pair-label">NO PAIR SELECTED</span><span id="power-value">50% FORCE</span></div>
+        <div class="power-row"><span class="power-end" aria-hidden="true">−</span><input type="range" id="power" min="0" max="100" value="50" aria-label="Shot power. Drag and release to launch the selected pair." disabled /><span class="power-end" aria-hidden="true">+</span><button id="release" disabled>Release pair <span aria-hidden="true">↗</span></button></div>
+        <div class="power-footer"><span id="power-hint">Select two pucks to set the force</span><button id="clear" disabled>Clear pair <span class="key">esc</span></button></div>
+      </div>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <div class="sr-only" id="accessible-pucks" aria-label="Select pucks with keyboard"></div>
+  </main>
+
+  <dialog id="help-dialog">
+    <button class="dialog-close" id="close-help" aria-label="Close instructions">×</button>
+    <div class="eyebrow">THE RULES OF PARTING</div><h2>One move.<br><em>Two consequences.</em></h2>
+    <div class="pair-diagram" aria-hidden="true"><span>←</span><i>A</i><div></div><i>B</i><span>→</span></div>
+    <ol class="rules"><li><strong>Choose any two pucks.</strong><p>All eight are shared. The line between your pair sets the direction; you choose the force.</p></li><li><strong>Drag the force slider. Release.</strong><p>Both pucks launch away from each other at the same speed. Watch the collisions settle, then pass the mouse.</p></li><li><strong>Score through your opening.</strong><p>Amber scores left, Blue scores right, whoever took the shot. Scored pucks disappear, taking their possible pairings with them.</p></li></ol>
+    <div class="end-rule">Most points after 24 turns wins. The game ends sooner if fewer than two pucks remain. Equal scores are a draw.</div>
+    <div class="help-shortcuts"><span><kbd>1–8</kbd> Select pucks</span><span><kbd>esc</kbd> Clear pair</span><span><kbd>space</kbd> Release</span><span><kbd>T</kbd> Top view</span></div>
+    <button class="primary" id="play">Let’s play <span>↗</span></button>
+  </dialog>
+
+  <dialog id="end-dialog">
+    <div class="eyebrow">THE TABLE HAS SETTLED</div><h2 id="result-title">Amber wins.</h2><div id="result-score">4 <span>—</span> 3</div><p id="result-detail">What would you leave on the table next time?</p>
+    <button class="primary" id="rematch">Same table. Play again. <span>↗</span></button><button class="text-button" id="inspect">Look at the final position</button>
+  </dialog>
+  <dialog id="new-dialog"><div class="eyebrow">START FRESH</div><h2>A new match?</h2><p>This clears the current score and swaps who starts.</p><div class="dialog-actions"><button id="cancel-new" class="quiet">Keep playing</button><button id="confirm-new" class="primary">New match ↗</button></div></dialog>
+  <div id="fatal" hidden role="alert"><h2>The rink couldn’t load.</h2><p id="fatal-message"></p><button id="reload">Reopen rink</button></div>
+  <script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+  <script type="module" src="/src/app.js"></script>
+</body>
+</html>

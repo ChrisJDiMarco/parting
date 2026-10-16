@@ -1,0 +1,17 @@
+{
+  "name": "parting",
+  "version": "1.0.0",
+  "description": "A game of equal force and unequal consequences.",
+  "private": true,
+  "type": "module",
+  "main": "main.cjs",
+  "author": "Chris DiMarco",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check main.cjs && node --check src/app.js && node --check src/scene.js && node --check src/physics.js && node --check src/sound.js",
+    "package": "electron-packager . Parting --platform=darwin --arch=arm64 --out=dist --overwrite --prune=true --icon=assets/parting.icns --app-bundle-id=com.chrisdimarco.parting --app-category-type=public.app-category.board-games --ignore=^/dist --ignore=^/tests --ignore=^/receipts --ignore=^/scripts"
+  },
+  "dependencies": { "three": "0.185.1" },
+  "devDependencies": { "electron": "44.2.0", "@electron/packager": "20.3.0", "playwright": "^1.58.0" }
+}
